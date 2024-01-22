@@ -1,0 +1,152 @@
+.Ujourney {
+    margin-top: -110px;
+}
+
+.uj-skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.U-subtitle, .U-tab {
+    margin-bottom: 4px;
+    margin-left: 540px;
+}
+
+.U-tab{
+    margin-bottom: 4px;
+    margin-left: 680px;
+}
+
+
+.U-title {
+    display: flex;
+    align-items: center;
+    margin-right: 220px; /* Adjust as needed */
+}
+
+.U-title::before {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: var(--main-color);
+    margin-right: 20px; /* Adjust as needed */
+}
+
+.U-skills {
+    margin-top: 40px;
+    margin-right: 0; /* Adjust as needed */
+}
+
+.U-key-skills {
+    display: flex;
+    flex-wrap: wrap; /* Allow skills to wrap to the next line */
+    margin-bottom: 30px;
+}
+
+.s-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: var(--sec-color);
+    filter: drop-shadow(0px 3.361px 3.361px rgba(0, 0, 0, 0.10));
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1; /* Adjust as needed */
+    position: relative;
+}
+
+.s-head {
+    color: var(--sub-main);
+    font-size: 1.4rem;
+}
+
+.s-note {
+    color: #656565;
+}
+
+.uj-butt {
+    position: relative;
+    bottom: 30px;
+    left: 0; /* Adjust as needed */
+}
+
+/*----Image----*/
+.right-content-uj {
+    background: url(../../image/Universty_journey-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:620px;
+    width: 450px;
+    border: 10px solid var(--sec-color);
+    margin-top: -140px; /* Adjust as needed */
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .uj-skills {
+        flex-direction: column-reverse;
+    }
+
+    .U-title,
+    .U-subtitle,
+    .U-tab,
+    .U-skills,
+    .uj-butt,
+    .right-content-uj {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .right-content-uj{
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0 0 var(--header-height) 0;
+    }
+
+    .section {
+        padding: 2rem 0 4rem;
+    }
+
+    .section__subtitle {
+        margin-bottom: var(--mb-3);
+    }
+    .right-content-uj{
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 576px) {
+
+    .right-content-uj{
+        margin-top: 10px;
+        height: 400px;
+        width: 100%;
+    }
+}
+
+/* For extra small devices */
+@media screen and (max-width: 350px) {
+
+
+    .container {
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+}

@@ -1,0 +1,134 @@
+.skills-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.l-title, .l-subtitle{
+    text-align: left;
+}
+
+.l-subtitle{
+    margin-bottom: 4px;
+}
+
+.l-title {
+    display: flex;
+    align-items: center;
+}
+  
+.l-title::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: var(--main-color);
+    margin-left: 20px; /* Adjust as needed */
+}
+
+.l-tab{
+    width: 40%;
+}
+
+.l-skills{
+    margin-top: 40px;
+}
+
+.l-key-skills{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.s-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: var(--sec-color);
+    filter: drop-shadow(0px 3.361px 3.361px rgba(0, 0, 0, 0.10));
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1; /* Adjust as needed */
+    position: relative;
+    flex-shrink: 0;
+}
+
+
+.s-head{
+    color: var(--sub-main);
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.s-note{
+    color: #656565;
+}
+
+/*----Image----*/
+.right-content{
+    background: url(../../image/learners_journey-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 530px;
+    width: 450px;
+    position: relative;
+    bottom: 140px;
+    border: 10px solid var(--sec-color);
+    flex-shrink: 0;
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .skills-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .l-tab {
+        width: 100%;
+    }
+
+    .right-content {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        border: 10px solid var(--sec-color);
+        margin-top: 150px;
+        object-fit: cover;
+    }
+
+    .l-title::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .right-content {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        border: 10px solid var(--sec-color);
+        margin-top: 150px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .right-content {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .right-content {
+        height: 300px;
+    }
+}

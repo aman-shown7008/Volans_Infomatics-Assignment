@@ -1,0 +1,83 @@
+.t-text {
+    text-align: center;
+    max-width: 68%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.traning-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.t-left-card,
+.t-right-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.traning-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 280px;
+}
+
+.t-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px 20px 30px;
+    margin: 10px 30px 30px 10px; 
+    text-align: center;
+    filter: drop-shadow(0px 3.361px 3.361px rgba(0, 0, 0, 0.10));
+}
+
+.t-note {
+    text-align: left;
+    width: 400px;
+}
+
+.t-button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}  
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .t-text {
+        max-width: 80%;
+    }
+
+    .traning-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .t-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .t-button{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .t-text {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .t-note {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .t-text {
+        max-width: 95%;
+    }
+}

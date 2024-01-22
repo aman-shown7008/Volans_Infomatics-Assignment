@@ -1,0 +1,89 @@
+.t-text {
+  margin-top: 10px;
+}
+
+.accordion-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.accordion-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  margin-bottom: 25px; 
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.accordion-item:hover {
+  background-color: #f5f5f5;
+}
+
+.accordion-title {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  background-color: var(--sub-main);
+  color: #fff;
+}
+
+.accordion-content {
+  padding: 15px;
+  font-size: 16px;
+  display: none;
+  background-color: #fff;
+  color: var(--sec-color);
+  text-align: left;
+}
+
+.active .accordion-content {
+  display: block;
+}
+
+.accordion-column {
+  width: 100%;
+  max-width: 400px; /* Adjust the max-width for responsiveness */
+}
+
+.accordion-column.left {
+  order: 1;
+}
+
+.accordion-column.right {
+  order: 2;
+}
+
+
+@media screen and (max-width: 992px) {
+  .accordion-column {
+    max-width: 100%; /* One accordion box on each row */
+  }
+  .accordion-container {
+    gap: 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .accordion-container {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .accordion-title {
+    font-size: 16px;
+  }
+
+  .accordion-content {
+    font-size: 14px;
+  }
+}

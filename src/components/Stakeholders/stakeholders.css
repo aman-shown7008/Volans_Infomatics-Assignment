@@ -1,0 +1,175 @@
+.card-btn{
+  display: block;
+  margin: 100px auto 0 auto; 
+}
+
+body {
+  margin: 0;
+}
+
+.card__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.card__title::before,
+.card__title::after {
+  content: "";
+  height: 2px;
+  width: 200px;
+  background-color: var(--main-color);
+}
+
+.card__title::before {
+  margin-right: 20px; /* Adjust as needed */
+}
+
+.card__title::after {
+  margin-left: 20px; /* Adjust as needed */
+}
+
+
+/*----Carousel----*/
+.card-slider-container {
+  width: 80%;
+  margin: 40px auto; /* Add top and bottom margins */
+  max-height: 350px!important; /* Set maximum height */
+}
+
+.slick-slide {
+  border: 12px solid transparent;
+}
+
+.card {
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-right: 20px!important;
+}
+  
+.custom-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  color: black;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 50px;
+  color: #ff000000;
+  background-color: black;
+}
+
+.slick-prev:before{
+  position: relative;
+  right: 35px;
+}
+
+.slick-next:before, .slick-prev:before{
+  color: var(--sub-main)!important;
+  font-size: 3.5rem!important;
+  opacity: 1!important;
+}
+  
+.slick-prev {
+  left: -30px;
+}
+  
+.slick-next {
+    right: -30px;
+}
+ 
+.c-head{
+  color: var(--sub-main);
+  font-size: 1.5rem;
+  margin: 20px 0 10px 0;
+  text-align: left;
+}
+
+.c-para{
+  color: #656565;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .card__title::before,
+  .card__title::after {
+    content: "";
+    height: 2px;
+    width: 150px;
+    background-color: var(--main-color);
+  }
+  
+  .card__title::before {
+    margin-right: 15px; 
+  }
+  
+  .card__title::after {
+    margin-left: 15px; 
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .card__title::before,
+  .card__title::after {
+    content: "";
+    height: 2px;
+    width: 120px;
+    background-color: var(--main-color);
+  }
+  
+  .card__title::before {
+    margin-right: 12px; /* Adjust as needed */
+  }
+  
+  .card__title::after {
+    margin-left: 12px; /* Adjust as needed */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card__title::before,
+.card__title::after {
+  content: "";
+  height: 2px;
+  width: 100px;
+  background-color: var(--main-color);
+}
+
+.card__title::before {
+  margin-right: 10px; 
+}
+
+.card__title::after {
+  margin-left: 10px; 
+}
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .card__title::before,
+  .card__title::after {
+    content: "";
+    height: 2px;
+    width: 80px;
+    background-color: var(--main-color);
+  }
+  
+  .card__title::before {
+    margin-right: 8px; /* Adjust as needed */
+  }
+  
+  .card__title::after {
+    margin-left: 8px; /* Adjust as needed */
+  }
+}
